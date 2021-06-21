@@ -1,5 +1,7 @@
 (function ($, window, document, undefined) {
   "use strict";
+  var animationFinished = false;
+  var pageLoaded = false;
   function whichAnimationEvent() {
     var t,
       el = document.createElement("fakeelement");
@@ -43,14 +45,26 @@
       }
     }
   };
+
+  var count = 0;
+  var animationEvent = whichAnimationEvent();
+  $("#loader").on(animationEvent, function (event) {
+    count++;
+    if (count === 14) {
+      animationFinished = true;
+      tryPageOpen();
+    }
+  });
+
+  function tryPageOpen() {
+    if (animationFinished && pageLoaded) {
+      $(".preloader").fadeOut();
+    }
+  }
   $(document).ready(function () {
     $(window).on("load", function () {
-      var count = 0;
-      var animationEvent = whichAnimationEvent();
-      $("#loader").on(animationEvent, function (event) {
-        count++;
-        if (count === 14) $(".preloader").fadeOut();
-      });
+      pageLoaded = true;
+      tryPageOpen();
       $(".animated-row").each(function () {
         var $this = $(this);
         $this.find(".animate").each(function (i) {

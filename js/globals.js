@@ -8,6 +8,6 @@ $(function () {
         .addClass("active");
     }
   });
-
   $("#social-icons").load("components/social-icons.html");
+  $("#footer").load("components/footer.html");
 });
