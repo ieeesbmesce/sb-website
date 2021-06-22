@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<!-- <div class="container-fluid">
   <div class="navbar">
     <a href="#slide01" id="logo" title="IEEE SB MESCE">
       <img src="assets/logos/ieee white.png" alt="" class="d-none d-md-block" />
@@ -10,15 +10,31 @@
           <i class="fa fa-bars"></i>
         </button>
         <div class="nav-box navbar-collapse">
-          <ul class="navigation-menu nav navbar-nav navbars" id="nav">
+          <ul
+            class="navigation-menu nav navbar-nav navbars position-relative"
+            id="nav"
+          >
             <li data-menuanchor="slide01" class="active">
               <a href="index.html#slide01">Home</a>
             </li>
             <li data-menuanchor="slide02">
               <a href="index.html#slide02">About</a>
             </li>
-            <li data-menuanchor="slide03">
-              <a href="index.html#slide03">Societies</a>
+            <li>
+              <a
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Societies
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+              </div>
             </li>
             <li data-menuanchor="slide04">
               <a href="index.html#slide04">My Skills</a>
@@ -49,3 +65,80 @@
     </a>
   </div>
 </div>
+ -->
+
+<nav class="navbar navbar-expand-lg navbar-light nav-color">
+  <a class="navbar-brand mx-3" href="index.html#slide01">
+    <img src="assets/logos/ieee white.png" alt="" class="d-none d-md-block" />
+    <img src="assets/logos/ieee black.png" alt="" class="d-md-none"
+  /></a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+      <li data-menuanchor="slide01" class="nav-item active">
+        <a class="nav-link" href="index.html#slide01">Home</a>
+      </li>
+      <li data-menuanchor="slide02" class="nav-item">
+        <a class="nav-link" href="index.html#slide02">About</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Societies
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <div>
+            <a class="dropdown-item" data-menuanchor="slide03" href="#slide03"
+              >Society 1</a
+            >
+            <a class="dropdown-item" href="#">Society 2</a>
+            <a class="dropdown-item" href="#">Society 3</a>
+            <a class="dropdown-item" href="#">Society 4</a>
+            <a class="dropdown-item" href="#">Society 5</a>
+            <a class="dropdown-item" href="#">Society 6</a>
+            <a class="dropdown-item" href="#">Society 7</a>
+          </div>
+        </div>
+      </li>
+      <li data-menuanchor="slide04" class="nav-item">
+        <a class="nav-link" href="index.html#slide04">My Skills</a>
+      </li>
+      <li data-menuanchor="slide05" class="nav-item">
+        <a class="nav-link" href="index.html#slide05">My Work</a>
+      </li>
+      <li data-menuanchor="slide06" class="nav-item">
+        <a class="nav-link" href="index.html#slide06">Testimonials</a>
+      </li>
+    </ul>
+  </div>
+  <div class="d-none d-md-block">
+    <a href="index.html#slide01" id="logo" title="IEEE SB MESCE">
+      <img
+        style="filter: invert(1)"
+        width="100"
+        height="100"
+        src="assets/logos/ieeesblogo.svg"
+        alt=""
+      />
+    </a>
+  </div>
+</nav>
+<script src="js/dropdown.js"></script>
