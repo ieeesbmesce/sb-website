@@ -13,13 +13,13 @@ $(function () {
           $this.addClass(showClass);
           $this.find($dropdownToggle).attr("aria-expanded", "true");
           $this.find($dropdownMenu).addClass(showClass);
-          $this.find($dropdownMenu).fadeIn();
+          $this.find($dropdownMenu).fadeIn("fast");
         },
         function () {
           const $this = $(this);
           $this.removeClass(showClass);
           $this.find($dropdownToggle).attr("aria-expanded", "false");
-          $this.find($dropdownMenu).fadeOut();
+          $this.find($dropdownMenu).fadeOut("fast");
           $this.find($dropdownMenu).removeClass(showClass);
         }
       );
