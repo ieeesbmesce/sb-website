@@ -1,5 +1,5 @@
 $(function () {
-  $("#header").load("components/navbar.html", function (data) {
+  $("#header").load("components/navbar.html", function () {
     if ($("#main").length) {
       $("li").removeClass("active");
       var val = $("#main").attr("data-under");
@@ -9,5 +9,9 @@ $(function () {
     }
   });
   $("#social-icons").load("components/social-icons.html");
-  $("#footer").load("components/footer.html");
+  $("#footer").load("components/footer.html", function () {
+    document
+      .getElementById("copyright-year")
+      .appendChild(document.createTextNode(new Date().getFullYear()));
+  });
 });
