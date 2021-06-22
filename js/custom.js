@@ -58,7 +58,7 @@
 
   function tryPageOpen() {
     if (animationFinished && pageLoaded) {
-      $(".preloader").fadeOut();
+      $(".preloader").fadeOut("slow");
     }
   }
   $(document).ready(function () {
@@ -82,7 +82,8 @@
         });
       });
     });
-    if ($(".facts-list").length) {
+
+    /* if ($(".facts-list").length) {
       $(".facts-list").owlCarousel({
         loop: true,
         nav: false,
@@ -251,6 +252,6 @@
       })
       .on("click", ".side-menu .navbar-nav li a", function () {
         $("body").removeClass("sidemenu-open");
-      });
+      }); */
   });
 })(jQuery, window, document);

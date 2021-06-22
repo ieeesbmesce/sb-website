@@ -1,7 +1,27 @@
 @media only screen and (min-width: 768px) {
-  .nav-box {
-    display: block !important;
-    height: auto !important;
+  .navbar-nav li a {
+    color: white !important;
+  }
+  .dropdown-menu {
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.3); /* Black w/opacity/see-through */
+    margin: 0;
+  }
+  .dropdown-menu::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.3); /* Black w/opacity/see-through */
+    filter: blur(8px);
+  }
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    background: none;
   }
 }
 @media only screen and (max-width: 1440px) {
@@ -140,7 +160,8 @@
     font-size: 13px;
   }
   .navbar-nav li {
-    margin-left: 25px;
+    margin-left: 12px;
+    margin-right: 12px;
   }
   .footer-right {
     font-size: 13px;
