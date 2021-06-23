@@ -6,6 +6,9 @@ $(function () {
       $('[data-menuanchor$="' + val + '"]')
         .first()
         .addClass("active");
+      $("a")
+        .filter('[data-menuanchor$="' + val + '"]')
+        .removeClass("drop-li");
     }
   });
   $("#social-icons").load("/components/social-icons.html");

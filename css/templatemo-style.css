@@ -374,7 +374,7 @@ a#logo {
   margin-top: 4px;
 }
 .navbar-nav li a:hover:after,
-.navbar-nav li.active a:after {
+.navbar-nav li.active a:not(.drop-li):after {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
