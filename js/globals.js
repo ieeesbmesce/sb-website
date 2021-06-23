@@ -9,6 +9,7 @@ $(function () {
         .addClass("active");
       $("a")
         .filter('[data-menuanchor$="' + val + '"]')
+        .removeAttr("href")
         .removeClass("drop-li");
     }
   });
