@@ -4,9 +4,8 @@ $(function () {
   const $dropdownToggle = $(".dropdown-toggle");
   const $dropdownMenu = $(".dropdown-menu");
   const showClass = "show";
-
-  $(window).on("load resize", function () {
-    if (this.matchMedia("(min-width: 768px)").matches) {
+  $(document).ready(function () {
+    if (window.matchMedia("(min-width: 768px)").matches) {
       $dropdown.hover(
         function () {
           const $this = $(this);
@@ -26,8 +25,9 @@ $(function () {
     } else {
       $dropdown.off("mouseenter mouseleave");
     }
-  });
-  $("#navbarSupportedContent a:not(.dropdown-btn)").click(function () {
-    $("#navbarSupportedContent").collapse("hide");
+    $(window).trigger("resize");
+    $("#navbarSupportedContent a:not(.dropdown-btn)").click(function () {
+      $("#navbarSupportedContent").collapse("hide");
+    });
   });
 });
