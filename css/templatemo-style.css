@@ -880,27 +880,6 @@ textarea.form-control {
   border-radius: 3px;
 }
 
-/*==============================================
-  EVENTS CSS
-================================================*/
-
-#events {
-  /* Prevent vertical gaps */
-  line-height: 10;
-  -webkit-column-count: 5;
-  -webkit-column-gap: 10px;
-  -moz-column-count: 5;
-  -moz-column-gap: 10px;
-  column-count: 5;
-  column-gap: 10px;
-}
-
-#events img {
-  /* Just in case there are inline attributes */
-  width: 80% !important;
-  height: auto !important;
-}
-
 #main {
   direction: ltr;
 }
