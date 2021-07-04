@@ -894,3 +894,65 @@ textarea.form-control {
 .welcome-title {
   margin-top: 110px;
 }
+.mt-30 {
+  margin-top: 30px;
+}
+.single-team-member {
+  position: relative;
+}
+.single-team-member img {
+  width: 100%;
+}
+.single-team-member .team-member-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 25px 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.single-team-member .team-member-overlay ul li {
+  display: inline-block;
+}
+.single-team-member .team-member-overlay ul li a {
+  font-size: 12px;
+  color: rgba(256, 256, 256, 0.7);
+  margin: 0 7px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.single-team-member .team-member-overlay ul li a:hover {
+  color: #fff;
+}
+.single-team-member .team-member-overlay .title {
+  color: #fff;
+  font-size: 22px;
+  text-transform: capitalize;
+  padding-top: 7px;
+}
+
+.single-team-member .team-member-overlay span {
+  font-size: 10px;
+  color: rgba(256, 256, 256, 0.7);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.single-team-member:hover .team-member-overlay {
+  left: 20px;
+  bottom: -20px;
+  opacity: 1;
+}
