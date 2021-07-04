@@ -221,11 +221,7 @@
     padding: 42px 45px;
   }
 }
-#footer {
-  position: fixed;
-  bottom: 0;
-  z-index: 6666;
-}
+
 @media only screen and (max-width: 767px) {
   #header {
     position: fixed;

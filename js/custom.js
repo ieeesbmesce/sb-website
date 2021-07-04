@@ -82,5 +82,38 @@
       pageLoaded = true;
       tryPageOpen();
     });
+    if ($(".fullpage-default").length) {
+      var myFullpage = new fullpage(".fullpage-default", {
+        responsiveWidth: 768,
+        responsiveHeight: 600,
+        responsiveSlides: true,
+      });
+    }
+    $(document)
+      .on("click", ".navbar-toggle", function () {
+        $(".navbar-collapse").slideToggle(300);
+        return false;
+      })
+      .on("click", ".navigation-menu > li > a", function () {
+        $(".navbar-collapse").slideUp(300);
+      })
+      .on("click", ".next-section", function () {
+        fullpage_api.moveSectionDown();
+      });
+    var slider = tns({
+      autoWidth: true,
+      autoplay: true,
+      autoplayButtonOutput: false,
+      controls: false,
+      nav: false,
+      items: 3.3,
+      gutter: 10,
+      mouseDrag: true,
+      swipeAngle: false,
+      container: "#autoWidth",
+      speed: 1000,
+      loop: true,
+      center: true,
+    });
   });
 })(jQuery, window, document);

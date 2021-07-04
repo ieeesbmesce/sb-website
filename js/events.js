@@ -1,5 +1,5 @@
 $(function () {
-  const portfolioLightbox = GLightbox({
+  var portfolioLightbox = GLightbox({
     selector: ".event-items",
   });
 });
