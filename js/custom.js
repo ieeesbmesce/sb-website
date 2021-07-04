@@ -111,9 +111,8 @@
       mouseDrag: true,
       swipeAngle: false,
       container: "#autoWidth",
-      speed: 1000,
       loop: true,
-      center: true,
+      rewind: true,
     });
   });
 })(jQuery, window, document);
