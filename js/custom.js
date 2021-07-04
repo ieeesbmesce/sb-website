@@ -106,13 +106,13 @@
       autoplayButtonOutput: false,
       controls: false,
       nav: false,
-      items: 3.3,
       gutter: 10,
       mouseDrag: true,
       swipeAngle: false,
       container: "#autoWidth",
       loop: true,
       rewind: true,
+      items: 1,
     });
   });
 })(jQuery, window, document);
