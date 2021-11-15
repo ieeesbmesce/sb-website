@@ -13,9 +13,17 @@
       rel="stylesheet"
     />
     <title>IEEE SB MESCE</title>
-    <link rel="icon" href="/assets/logos/IEEE sb LOGO white1.png" />
+    <link rel="icon" href="//assets/logos/IEEE sb LOGO white1.png" />
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/font-awesome.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"
+    />
     <link rel="stylesheet" href="/css/animate.css" />
     <link rel="stylesheet" href="/css/templatemo-style.css" />
     <link rel="stylesheet" href="/css/responsive.css" />
@@ -94,37 +102,184 @@
           </svg>
         </div>
       </div>
-      <header id="header">
+      <header id="header" class="position-sticky">
         <!--To be replaced by JQuery to laod Navbar-->
       </header>
-      <video autoplay muted loop id="myVideo">
+      <video autoplay muted loop id="myVideo" style="z-index: -1">
         <source src="/assets/MESCE HELICAM VIEW.mp4" type="video/mp4" />
       </video>
       <!-- Change data-under to move menu underline -->
       <div
-        class="
-          position-absolute
-          h-100
-          w-100
-          d-flex
-          align-items-center
-          justify-content-center
+        class="position-fixed w-100 d-flex flex-column align-items-center"
+        style="
+          z-index: 10;
+          overflow-y: auto;
+          overflow-x: hidden;
+          max-height: 70vh;
+          max-width: 100vw;
+          direction: rtl;
         "
-        style="z-index: 1"
+        data-simplebar
       >
         <div
           id="main"
           class="animated-row"
-          data-under="d3"
+          data-under="d2"
           data-parent="slide03"
         >
           <div class="row justify-content-center">
             <div class="col-md-8 wide-col-laptop">
-              <div class="title-block animate" data-animate="fadeInUp">
-                <!--Replace Content: Title-->
+              <div
+                class="animate bg-white text-dark sticky-top rounded"
+                data-animate="fadeInUp"
+              >
+                <h1>CS Society</h1>
               </div>
-              <div class="col-md-8 offset-md-2">
-                <!--Replace Content: Content-->
+              <div class="container-fluid animated-row">
+                <div class="animate" data-animate="fadeInUp">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.""Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                  ea commodo consequat. Duis aute irure dolor in reprehenderit
+                  in voluptate velit esse cillum dolore eu fugiat nulla
+                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                  in culpa qui officia deserunt mollit anim id est laborum."
+                </div>
+                <div
+                  id="event"
+                  class="bg-white text-dark animate rounded-bottom"
+                  data-animate="fadeInUp"
+                >
+                  <h3>Events</h3>
+                </div>
+                <div id="events" class="row animate" data-animate="fadeInUp">
+                  <div class="card-columns">
+                    <div class="card">
+                      <a
+                        href="/assets/img/portfolio/portfolio-1.jpg"
+                        data-gallery="eventGallery"
+                        class="event-items"
+                        title="App 1"
+                        ><img
+                          src="/assets/img/portfolio/portfolio-1.jpg"
+                          class="img-fluid"
+                          alt=""
+                      /></a>
+                    </div>
+
+                    <div class="card">
+                      <a
+                        href="/assets/img/portfolio/portfolio-2.jpg"
+                        data-gallery="eventGallery"
+                        class="event-items"
+                        title="App 1"
+                        ><img
+                          src="/assets/img/portfolio/portfolio-2.jpg"
+                          class="img-fluid"
+                          alt=""
+                      /></a>
+                    </div>
+
+                    <div class="card">
+                      <a
+                        href="/assets/img/portfolio/portfolio-3.jpg"
+                        data-gallery="eventGallery"
+                        class="event-items"
+                        title="App 1"
+                        ><img
+                          src="/assets/img/portfolio/portfolio-3.jpg"
+                          class="img-fluid"
+                          alt=""
+                      /></a>
+                    </div>
+
+                    <div class="card">
+                      <a
+                        href="/assets/img/portfolio/portfolio-4.jpg"
+                        data-gallery="eventGallery"
+                        class="event-items"
+                        title="App 1"
+                        ><img
+                          src="/assets/img/portfolio/portfolio-4.jpg"
+                          class="img-fluid"
+                          alt=""
+                      /></a>
+                    </div>
+
+                    <div class="card">
+                      <a
+                        href="/assets/img/portfolio/portfolio-5.jpg"
+                        data-gallery="eventGallery"
+                        class="event-items"
+                        title="App 1"
+                        ><img
+                          src="/assets/img/portfolio/portfolio-5.jpg"
+                          class="img-fluid"
+                          alt=""
+                      /></a>
+                    </div>
+
+                    <div class="card">
+                      <a
+                        href="/assets/img/portfolio/portfolio-6.jpg"
+                        data-gallery="eventGallery"
+                        class="event-items"
+                        title="App 1"
+                        ><img
+                          src="/assets/img/portfolio/portfolio-6.jpg"
+                          class="img-fluid"
+                          alt=""
+                      /></a>
+                    </div>
+
+                    <div class="card">
+                      <a
+                        href="/assets/img/portfolio/portfolio-7.jpg"
+                        data-gallery="eventGallery"
+                        class="event-items"
+                        title="App 1"
+                        ><img
+                          src="/assets/img/portfolio/portfolio-7.jpg"
+                          class="img-fluid"
+                          alt=""
+                      /></a>
+                    </div>
+
+                    <div class="card">
+                      <a
+                        href="/assets/img/portfolio/portfolio-8.jpg"
+                        data-gallery="eventGallery"
+                        class="event-items"
+                        title="App 1"
+                        ><img
+                          src="/assets/img/portfolio/portfolio-8.jpg"
+                          class="img-fluid"
+                          alt=""
+                      /></a>
+                    </div>
+
+                    <div class="card">
+                      <a
+                        href="/assets/img/portfolio/portfolio-9.jpg"
+                        data-gallery="eventGallery"
+                        class="event-items"
+                        title="App 1"
+                        ><img
+                          src="/assets/img/portfolio/portfolio-9.jpg"
+                          class="img-fluid"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -140,7 +295,10 @@
     <script src="/js/jquery.js"></script>
     <script src="/js/globals.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="/js/jquery.inview.min.js"></script>
     <script src="/js/custom.js"></script>
+    <script src="/js/events.js"></script>
   </body>
 </html>
